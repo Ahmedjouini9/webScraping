@@ -1,0 +1,15 @@
+# An Official Selenium Base image with FireFox
+FROM selenium/standalone-firefox
+
+# Set the working directory in the container 
+WORKDIR /download
+
+
+# Copy the scripts with necessary files
+COPY . /download
+
+# Installing the dependencies
+RUN pip install selenium webdriver_manager
+
+# Command to run the script
+CMD ["python", "firefox.py"]

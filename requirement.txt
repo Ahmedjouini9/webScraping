@@ -1,0 +1,7 @@
+Python 3.x
+Selenium WebDriver
+pytest
+browsermob_proxy
+pandas
+webdriver_manager
+sqlalchemy
